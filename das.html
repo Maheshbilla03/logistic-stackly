@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logistics Dashboard</title>
+  <link rel="stylesheet" href="das.css">
+</head>
+<body>
+
+<div class="scroll-buttons">
+  <button id="scrollTopBtn">↑</button>
+  <button id="scrollBottomBtn">↓</button>
+</div>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <a href="das.html" class="sidebar-logo">
+      <img src="logo1.webp" alt="Stackly Logo">
+      <span>Stackly Logistics</span>
+    </a>
+<div class="error-menu">
+
+  <a href="404.html">Dashboard</a>
+  <a href="404.html">Shipments</a>
+  <a href="404.html">Orders</a>
+  <a href="404.html">Drivers</a>
+  <a href="404.html">Tracking</a>
+  <a href="404.html">Reports</a>
+  <a href="404.html">Customers</a>
+  <a href="404.html">Notifications</a>
+  <a href="404.html">Settings</a>
+
+</div>
+    <button onclick="logout()">Logout</button>
+  </aside>
+
+  <main class="main">
+
+    <div class="topbar">
+      <div>
+        <h1>Welcome, <span id="dashboardName">User</span> 👋</h1>
+        <p>Email: <span id="dashboardEmail">user@gmail.com</span></p>
+        <p>Phone: <span id="dashboardPhone">0000000000</span></p>
+      </div>
+      <div class="profile" id="profileLetters">US</div>
+    </div>
+
+    <section id="overview" class="page active-page">
+      <div class="hero-card">
+        <h2>Logistics Dashboard</h2>
+        <p>Your logistics operations are running smoothly today.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card blue"><h3>Total Shipments</h3><p>1,245</p><span>+12% this month</span></div>
+        <div class="card orange"><h3>Pending Orders</h3><p>86</p><span>Needs attention</span></div>
+        <div class="card green"><h3>Delivered</h3><p>980</p><span>Successfully completed</span></div>
+        <div class="card red"><h3>Active Drivers</h3><p>42</p><span>On road now</span></div>
+      </div>
+    </section>
+
+    <section id="shipments" class="page">
+      <h2>Recent Shipments</h2>
+      <table>
+        <tr><th>Shipment ID</th><th>Destination</th><th>Status</th><th>Delivery Date</th></tr>
+        <tr><td>#S101</td><td>Hyderabad</td><td><span class="status transit">In Transit</span></td><td>12 June 2026</td></tr>
+        <tr><td>#S102</td><td>Chennai</td><td><span class="status delivered">Delivered</span></td><td>10 June 2026</td></tr>
+        <tr><td>#S103</td><td>Bangalore</td><td><span class="status pending">Pending</span></td><td>14 June 2026</td></tr>
+      </table>
+    </section>
+
+    <section id="orders" class="page">
+      <h2>Orders Management</h2>
+      <div class="info-box"><h3>New Orders</h3><p>Today 24 new orders received from multiple locations.</p></div>
+      <div class="info-box"><h3>Priority Orders</h3><p>8 priority orders need same-day shipment processing.</p></div>
+    </section>
+
+    <section id="drivers" class="page">
+      <h2>Driver Details</h2>
+      <div class="driver-grid">
+        <a href="404.html" class="driver-link"><div class="driver-card"><h3>Ravi Kumar</h3><p>Vehicle: AP 09 AB 1234</p><span>Available</span></div></a>
+        <a href="404.html" class="driver-link"><div class="driver-card"><h3>Suresh Reddy</h3><p>Vehicle: TS 10 XY 4567</p><span>On Delivery</span></div></a>
+        <a href="404.html" class="driver-link"><div class="driver-card"><h3>Kiran Das</h3><p>Vehicle: KA 05 MN 8899</p><span>Available</span></div></a>
+      </div>
+    </section>
+
+    <section id="tracking" class="page">
+      <h2>Track Shipment</h2>
+      <div class="tracking-box">
+        <input type="text" id="trackInput" placeholder="Enter Tracking ID">
+        <button onclick="trackOrder()">Track Now</button>
+        <p id="trackResult"></p>
+      </div>
+    </section>
+
+    <section id="reports" class="page">
+      <h2>Reports & Analytics</h2>
+      <div class="info-box"><h3>Monthly Report</h3><p>Total delivery success rate is 94% this month.</p></div>
+      <div class="info-box"><h3>Revenue Report</h3><p>Logistics revenue increased by 18% compared to last month.</p></div>
+    </section>
+
+    <section id="customers" class="page">
+      <h2>Top Customers</h2>
+      <div class="info-box"><h3>Amazon Logistics</h3><p>350 Deliveries Completed</p></div>
+      <div class="info-box"><h3>Flipkart Express</h3><p>280 Deliveries Completed</p></div>
+      <div class="info-box"><h3>Myntra Shipping</h3><p>195 Deliveries Completed</p></div>
+    </section>
+
+    <section id="notifications" class="page">
+      <h2>Notifications</h2>
+      <div class="info-box"><h3>🚚 Shipment Update</h3><p>Shipment #S101 reached Hyderabad Hub.</p></div>
+      <div class="info-box"><h3>⚠ Driver Alert</h3><p>Vehicle TS10XY4567 requires maintenance.</p></div>
+      <div class="info-box"><h3>✅ Delivery Success</h3><p>Shipment #S102 delivered successfully.</p></div>
+    </section>
+
+    <section id="settings" class="page">
+      <h2>Account Settings</h2>
+      <div class="info-box">
+        <h3>User Profile</h3>
+        <p>Name: <span id="settingsName">User</span></p>
+        <p>Email: <span id="settingsEmail">user@gmail.com</span></p>
+        <p>Phone: <span id="settingsPhone">0000000000</span></p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="das.js"></script>
+</body>
+</html>
