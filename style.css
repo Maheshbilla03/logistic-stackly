@@ -1,0 +1,147 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+  linear-gradient(rgba(0,0,0,.65),
+  rgba(0,0,0,.65)),
+  url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.container{
+  width:420px;
+  position:relative;
+}
+
+.form-box{
+  display:none;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(15px);
+  border:1px solid rgba(255,255,255,0.2);
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 10px 40px rgba(0,0,0,.4);
+  animation:fade .4s ease;
+}
+
+.form-box.active{
+  display:block;
+}
+
+@keyframes fade{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+h1{
+  text-align:center;
+  color:#fff;
+  margin-bottom:25px;
+}
+
+.input-box{
+  position:relative;
+  margin-bottom:18px;
+}
+
+.input-box i{
+  position:absolute;
+  left:15px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#ffb703;
+}
+
+.input-box input{
+  width:100%;
+  padding:14px 14px 14px 45px;
+  border:none;
+  outline:none;
+  border-radius:10px;
+  background:rgba(255,255,255,.15);
+  color:#fff;
+}
+
+.input-box input::placeholder{
+  color:#ddd;
+}
+
+.forgot{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  display:block;
+  text-align:right;
+  margin-bottom:20px;
+}
+
+.btn{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  background:#ffb703;
+  color:#000;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+p{
+  text-align:center;
+  color:#fff;
+  margin-top:18px;
+}
+
+.switch-btn{
+  width:100%;
+  margin-top:10px;
+  padding:12px;
+  border:2px solid #ffb703;
+  background:transparent;
+  color:#fff;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.switch-btn:hover{
+  background:#ffb703;
+  color:#000;
+}
+
+@media(max-width:500px){
+
+.container{
+  width:95%;
+}
+
+.form-box{
+  padding:25px;
+}
+
+}
