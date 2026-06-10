@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly Logistics</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#home" class="logo">
+    <img src="logo1.webp" alt="Logo">
+    <span>STACKLY</span>
+  </a>
+
+  <nav id="navLinks">
+    <a href="#home">Home</a>
+    <a href="404.html">About</a>
+    <a href="404.html">Services</a>
+    <a href="404.html">Tracking</a>
+    <a href="404.html">Testimonials</a>
+    <a href="404.html">Contact</a>
+    <a href="login.html" class="nav-btn">Login</a>
+  </nav>
+
+  <div class="menu" onclick="toggleMenu()">☰</div>
+</header>
+
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <img src="logo1.webp" alt="Stackly Logo">
+    <h1>STACKLY<span class="dots"></span></h1>
+    <h2>Smart Logistics & Supply Chain Solutions</h2>
+    <p>
+      Manage shipments, track deliveries, optimize routes and improve
+      logistics operations with Stackly Logistics.
+    </p>
+
+    <div class="hero-stats">
+      <div><h3>25K+</h3><span>Orders Delivered</span></div>
+      <div><h3>500+</h3><span>Drivers</span></div>
+      <div><h3>50+</h3><span>Cities</span></div>
+      <div><h3>99%</h3><span>Success Rate</span></div>
+    </div>
+
+    <div class="hero-buttons">
+      <a href="404.html" class="login-btn">Open Login</a>
+      <a href="404.html" class="service-btn">Explore Services</a>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>
+    Stackly Logistics provides fast, secure and reliable shipment solutions
+    for businesses with real-time tracking and smart delivery management.
+  </p>
+
+  <div class="grid">
+
+    <div class="box">
+      <img src="Network.webp" alt="Fast Network">
+      <h3>🚚 Fast Network</h3>
+      <p>We connect cities with fast transport and trusted delivery systems.</p>
+    </div>
+
+    <div class="box">
+      <img src="Safe.webp" alt="Safe Handling">
+      <h3>📦 Safe Handling</h3>
+      <p>Every package is handled with care from pickup to final delivery.</p>
+    </div>
+
+    <div class="box">
+      <img src="dasbord.webp" alt="Smart Dashboard">
+      <h3>📊 Smart Dashboard</h3>
+      <p>Monitor orders, drivers, shipments and reports easily.</p>
+    </div>
+
+    <div class="box">
+      <img src="Shipping.webp" alt="Global Shipping">
+      <h3>🌍 Global Shipping</h3>
+      <p>International logistics solutions for worldwide delivery needs.</p>
+    </div>
+
+    <div class="box">
+      <img src="warehouse.webp" alt="Warehouse">
+      <h3>🏢 Warehouse Management</h3>
+      <p>Modern storage facilities with secure inventory management.</p>
+    </div>
+
+    <div class="box">
+      <img src="Track.webp" alt="Real Time Tracking">
+      <h3>📍 Real-Time Tracking</h3>
+      <p>Track shipments live and receive instant delivery updates.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <h2>Our Services</h2>
+
+  <div class="grid">
+    <div class="box"><h3>🚚 Fast Delivery</h3><p>Quick and safe delivery across multiple cities.</p></div>
+    <div class="box"><h3>📦 Order Management</h3><p>Manage all customer orders in one dashboard.</p></div>
+    <div class="box"><h3>🛰 Live Tracking</h3><p>Track shipments with real-time status updates.</p></div>
+    <div class="box"><h3>🏬 Warehouse Support</h3><p>Complete warehouse and inventory handling.</p></div>
+    <div class="box"><h3>🌍 Global Shipping</h3><p>International logistics solutions for worldwide delivery needs.</p></div>
+    <div class="box"><h3>📊 Analytics</h3><p>Gain insights with detailed reports and analytics.</p></div>
+    <div class="box"><h3>🤝 Customer Support</h3><p>24/7 dedicated support for all your logistics needs.</p></div>
+  </div>
+</section>
+<section class="section process">
+  <h2>Our Logistics Process</h2>
+
+  <div class="grid">
+
+    <div class="box">
+      <img src="Pickup.webp" alt="Pickup">
+      <h3>1️⃣ Pickup</h3>
+      <p>Collect shipments from customer locations.</p>
+    </div>
+
+    <div class="box">
+      <img src="Sorting.webp" alt="Sorting">
+      <h3>2️⃣ Sorting</h3>
+      <p>Warehouse verification and package sorting.</p>
+    </div>
+
+    <div class="box">
+      <img src="Transport.webp" alt="Transport">
+      <h3>3️⃣ Transport</h3>
+      <p>Safe movement through our delivery network.</p>
+    </div>
+
+    <div class="box">
+      <img src="Delivery.webp" alt="Delivery">
+      <h3>4️⃣ Delivery</h3>
+      <p>On-time delivery with customer confirmation.</p>
+    </div>
+
+    <div class="box">
+      <img src="Star.webp" alt="Feedback">
+      <h3>5️⃣ Feedback</h3>
+      <p>Share your experience and help us improve.</p>
+    </div>
+
+    <div class="box">
+      <img src="Support.webp" alt="Support">
+      <h3>6️⃣ Support</h3>
+      <p>24/7 customer support for any issues or queries.</p>
+    </div>
+
+  </div>
+</section>
+<section class="section tracking" id="tracking">
+  <h2>Track Your Shipment</h2>
+
+  <div class="track-box">
+    <input type="text" id="trackInput" placeholder="Enter Tracking ID">
+   <a href="404.html" class="track-btn">Track Now</a>
+    <p id="trackResult"></p>
+  </div>
+</section>
+
+<section class="section testimonials" id="testimonials">
+  <h2 class="section-title">What Our Clients Say</h2>
+  <p class="section-subtitle">
+    Trusted by businesses across India for fast, secure, and reliable logistics services.
+  </p>
+
+  <div class="testimonial-grid">
+
+    <div class="testimonial-card">
+      <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/01/s-s-rajamouli-header.png" alt="Ravi Kumar">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Stackly Logistics improved our delivery speed and helped us manage
+        shipments efficiently. Highly professional team."
+      </p>
+      <h4>s.s Rajamouli</h4>
+      <span>Business Owner</span>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.tT93vI7oifmJWcO1OGVrXgHaL5?pid=Api&P=0&h=180" alt="Harini">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Best dashboard for tracking shipments. Real-time updates make our
+        logistics process smooth and stress-free."
+      </p>
+      <h4>Rama Rajamuli</h4>
+      <span>Operations Manager</span>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://observer.com/wp-content/uploads/sites/2/2025/04/GettyImages-2188101054-e1745949938185.jpg?quality=80&w=970" alt="Mahesh">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Very clean and reliable logistics system. Delivery tracking and
+        customer support are excellent."
+      </p>
+      <h4>Andy Jassy</h4>
+      <span>Supply Chain Executive</span>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://th.bing.com/th/id/OIP.QGPUAfw74xGADQpkDFir4gHaHa?w=194&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Anjali">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Excellent customer support and timely deliveries. Stackly has become
+        our trusted logistics partner."
+      </p>
+      <h4>Elana Caplan</h4>
+      <span>E-commerce Seller</span>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="data:image/webp;base64,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" alt="Suresh">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Our go-to logistics partner for all deliveries. Safe transportation
+        and quick shipment handling."
+      </p>
+      <h4>Jason Oxenham</h4>
+      <span>Warehouse Manager</span>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://campusreporter.in/wp-content/uploads/2025/07/vcxdfghbv-1000x600.jpg" alt="Priya">
+      <div class="stars">★★★★★</div>
+      <p>
+        "Highly recommend Stackly for fast and secure deliveries. The service
+        quality is outstanding."
+      </p>
+      <h4>Priya</h4>
+      <span>Retail Business Owner</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact Us</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <input type="text" placeholder="Phone Number">
+    <textarea placeholder="Your Message"></textarea>
+    <a href="404.html" class="submit-btn">Send Message</a>
+  </form>
+</section>
+<footer class="footer">
+
+  <div class="footer-col">
+    <h2>
+  <a href="#home" class="footer-logo">
+    🚚 Stackly Logistics
+  </a>
+</h2>
+    <p>
+      Smart logistics, shipment tracking and delivery management solutions
+      for businesses worldwide.
+    </p>
+
+    <div class="social-icons">
+      <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+      <a href="404.html"><i class="fab fa-instagram"></i></a>
+      <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+      <a href="404.html"><i class="fab fa-x-twitter"></i></a>
+    </div>
+
+    <a href="404.html" class="footer-btn">Get Quote</a>
+  </div>
+
+  <div class="footer-col">
+    <h3>Quick Links</h3>
+
+    <a href="#home">🏠 Home</a>
+    <a href="404.html">ℹ️ About</a>
+    <a href="404.html">🛠 Services</a>
+    <a href="404.html">📦 Tracking</a>
+    <a href="404.html">📞 Contact</a>
+  </div>
+
+  <div class="footer-col">
+    <h3>Our Services</h3>
+
+    <a href="404.html">🚚 Road Transport</a>
+    <a href="404.html">✈️ Air Freight</a>
+    <a href="404.html">🚢 Ocean Freight</a>
+    <a href="404.html">🏢 Warehousing</a>
+    <a href="404.html">📍 GPS Tracking</a>
+  </div>
+
+  <div class="footer-col">
+    <h3>Contact Us</h3>
+
+    <p>📧 stackly@logistics.com</p>
+    <p>📞 +91 98765 43210</p>
+    <p>📍 Hyderabad, India</p>
+
+    <a href="404.html" class="footer-btn">Contact Now</a>
+  </div>
+
+</footer>
+
+<div class="footer-bottom">
+  <p>© 2026 Stackly Logistics. All Rights Reserved.</p>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
